@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Date Picker Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DatePickerController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Date Picker Controller-->
         <scene sceneID="9xC-W1-Wb5">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="K8i-wk-TTD" customClass="ViewController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="K8i-wk-TTD" customClass="DatePickerController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LKn-Yx-Ym2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,8 +123,12 @@
                                         <date key="maximumDate" timeIntervalSinceReferenceDate="-46800">
                                             <!--2000-12-31 11:00:00 +0000-->
                                         </date>
+                                        <connections>
+                                            <action selector="dateChanged:" destination="cRM-nV-3q0" eventType="valueChanged" id="EoV-kg-0kp"/>
+                                            <action selector="dateChanged:" destination="K8i-wk-TTD" eventType="valueChanged" id="YsN-uR-Zic"/>
+                                        </connections>
                                     </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98r-S8-Xse">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98r-S8-Xse">
                                         <rect key="frame" x="0.0" y="371.5" width="382" height="145.5"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
@@ -157,15 +161,20 @@
                         <viewLayoutGuide key="safeArea" id="0Wg-ZX-64Z"/>
                     </view>
                     <navigationItem key="navigationItem" id="bZp-EV-H0d"/>
+                    <connections>
+                        <outlet property="findOutButton" destination="98r-S8-Xse" id="NPA-7U-Hgf"/>
+                        <outlet property="pckBirthDate" destination="haC-GP-Tss" id="SrP-bL-OtZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3R-lv-ZUh" sceneMemberID="firstResponder"/>
+                <exit id="cRM-nV-3q0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1902.8985507246377" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="4bJ-nz-YjP">
             <objects>
-                <viewController id="CsP-jK-gHs" sceneMemberID="viewController">
+                <viewController id="CsP-jK-gHs" customClass="ResultsViewController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ofC-dT-kiR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
