@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="61e-ew-thA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,207 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodTexture" translatesAutoresizingMaskIntoConstraints="NO" id="ksc-zr-k3l">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candle" translatesAutoresizingMaskIntoConstraints="NO" id="q6A-va-k2K">
+                                <rect key="frame" x="16" y="734" width="128" height="128"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-pb-yDl">
+                                <rect key="frame" x="16" y="288" width="382" height="374"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your chinese horoscope?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-Ud-IUP">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="187"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4St-gC-QW8">
+                                        <rect key="frame" x="0.0" y="187" width="382" height="187"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="80"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="Begin!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="K8i-wk-TTD" kind="show" id="be7-v9-0xj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="q6A-va-k2K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4l8-7a-ckq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ksc-zr-k3l" secondAttribute="trailing" id="FC9-Fw-2vU"/>
+                            <constraint firstItem="JF5-pb-yDl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IoM-ko-4hq"/>
+                            <constraint firstItem="ksc-zr-k3l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U2J-di-3ua"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JF5-pb-yDl" secondAttribute="trailing" constant="16" id="Wd9-6Y-bjB"/>
+                            <constraint firstItem="ksc-zr-k3l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yzr-w2-Tev"/>
+                            <constraint firstItem="q6A-va-k2K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="646" id="ZMp-yE-GKe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q6A-va-k2K" secondAttribute="trailing" constant="270" id="blV-dp-6A6"/>
+                            <constraint firstItem="q6A-va-k2K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iTb-6b-E3t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JF5-pb-yDl" secondAttribute="bottom" constant="200" id="lnv-pK-3wT"/>
+                            <constraint firstItem="ksc-zr-k3l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="o6Y-YX-clB"/>
+                            <constraint firstItem="JF5-pb-yDl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="s41-3m-zjN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="GM9-df-Om7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aLw-hN-1AP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="61e-ew-thA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="faw-jY-Ifg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1Lc-vt-Zre"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45Z-a9-Opf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9xC-W1-Wb5">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="K8i-wk-TTD" customClass="ViewController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LKn-Yx-Ym2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodTexture" translatesAutoresizingMaskIntoConstraints="NO" id="Upn-YK-MPf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candle" translatesAutoresizingMaskIntoConstraints="NO" id="tj4-l0-CgD">
+                                <rect key="frame" x="16" y="719" width="128" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="143" id="CS4-jf-2Wj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wjs-Bv-AAP">
+                                <rect key="frame" x="16" y="104" width="382" height="517"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your birthdate!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpz-Wa-2WN">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="145.5"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="haC-GP-Tss">
+                                        <rect key="frame" x="0.0" y="185.5" width="382" height="146"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-347112000">
+                                            <!--1990-01-01 12:00:00 +0000-->
+                                        </date>
+                                        <date key="maximumDate" timeIntervalSinceReferenceDate="-46800">
+                                            <!--2000-12-31 11:00:00 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98r-S8-Xse">
+                                        <rect key="frame" x="0.0" y="371.5" width="382" height="145.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
+                                        <size key="titleShadowOffset" width="3" height="3"/>
+                                        <state key="normal" title="Find out!">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="CsP-jK-gHs" kind="show" id="N6y-Dp-hX7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tj4-l0-CgD" firstAttribute="bottom" secondItem="Upn-YK-MPf" secondAttribute="bottom" id="28Q-V0-D78"/>
+                            <constraint firstItem="Upn-YK-MPf" firstAttribute="leading" secondItem="0Wg-ZX-64Z" secondAttribute="leading" id="B4D-wo-2PT"/>
+                            <constraint firstItem="tj4-l0-CgD" firstAttribute="top" secondItem="Wjs-Bv-AAP" secondAttribute="bottom" constant="98" id="DgF-Pt-XtX"/>
+                            <constraint firstItem="Upn-YK-MPf" firstAttribute="bottom" secondItem="0Wg-ZX-64Z" secondAttribute="bottom" id="Hd6-aM-BFx"/>
+                            <constraint firstItem="Wjs-Bv-AAP" firstAttribute="top" secondItem="0Wg-ZX-64Z" secondAttribute="top" constant="16" id="IHk-s5-yla"/>
+                            <constraint firstItem="0Wg-ZX-64Z" firstAttribute="trailing" secondItem="Upn-YK-MPf" secondAttribute="trailing" id="JXM-f4-qyN"/>
+                            <constraint firstItem="Wjs-Bv-AAP" firstAttribute="leading" secondItem="LKn-Yx-Ym2" secondAttribute="leading" constant="16" id="UeJ-L4-Lh3"/>
+                            <constraint firstItem="0Wg-ZX-64Z" firstAttribute="trailing" secondItem="tj4-l0-CgD" secondAttribute="trailing" constant="270" id="cYP-8P-ghy"/>
+                            <constraint firstAttribute="trailing" secondItem="Wjs-Bv-AAP" secondAttribute="trailing" constant="16" id="hBi-fh-XXq"/>
+                            <constraint firstItem="Upn-YK-MPf" firstAttribute="top" secondItem="0Wg-ZX-64Z" secondAttribute="top" id="hOd-IR-jvk"/>
+                            <constraint firstItem="tj4-l0-CgD" firstAttribute="leading" secondItem="Wjs-Bv-AAP" secondAttribute="leading" id="q8x-b4-S9q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0Wg-ZX-64Z"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bZp-EV-H0d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3R-lv-ZUh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902.8985507246377" y="138.61607142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4bJ-nz-YjP">
+            <objects>
+                <viewController id="CsP-jK-gHs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofC-dT-kiR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="woodTexture" translatesAutoresizingMaskIntoConstraints="NO" id="r8a-Ag-qbS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candle" translatesAutoresizingMaskIntoConstraints="NO" id="0sm-Rk-E2Z">
+                                <rect key="frame" x="16" y="757" width="132" height="105"/>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-r7-ljF">
+                                <rect key="frame" x="0.0" y="133" width="414" height="32"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <segments>
+                                    <segment title="Caracteristicas"/>
+                                    <segment title="Afinidad"/>
+                                    <segment title="Aspectos"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="shQ-EY-3f8" firstAttribute="trailing" secondItem="0sm-Rk-E2Z" secondAttribute="trailing" constant="266" id="2i1-X0-YlJ"/>
+                            <constraint firstItem="0sm-Rk-E2Z" firstAttribute="leading" secondItem="shQ-EY-3f8" secondAttribute="leading" constant="16" id="6Po-EP-aAS"/>
+                            <constraint firstItem="V8Z-r7-ljF" firstAttribute="top" secondItem="shQ-EY-3f8" secondAttribute="top" constant="45" id="7gL-Gv-fcL"/>
+                            <constraint firstItem="V8Z-r7-ljF" firstAttribute="leading" secondItem="shQ-EY-3f8" secondAttribute="leading" id="AgR-HD-Ae1"/>
+                            <constraint firstItem="r8a-Ag-qbS" firstAttribute="top" secondItem="shQ-EY-3f8" secondAttribute="top" id="IKn-k1-uSf"/>
+                            <constraint firstItem="r8a-Ag-qbS" firstAttribute="leading" secondItem="shQ-EY-3f8" secondAttribute="leading" id="YK3-vC-EKg"/>
+                            <constraint firstItem="shQ-EY-3f8" firstAttribute="bottom" secondItem="r8a-Ag-qbS" secondAttribute="bottom" id="aHh-LO-hqW"/>
+                            <constraint firstItem="shQ-EY-3f8" firstAttribute="trailing" secondItem="r8a-Ag-qbS" secondAttribute="trailing" id="dip-6O-6e8"/>
+                            <constraint firstItem="0sm-Rk-E2Z" firstAttribute="top" secondItem="shQ-EY-3f8" secondAttribute="top" constant="669" id="xlw-lB-F6e"/>
+                            <constraint firstItem="0sm-Rk-E2Z" firstAttribute="bottom" secondItem="r8a-Ag-qbS" secondAttribute="bottom" id="zEe-Hf-5Z9"/>
+                            <constraint firstItem="shQ-EY-3f8" firstAttribute="trailing" secondItem="V8Z-r7-ljF" secondAttribute="trailing" id="zMJ-H0-QYg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="shQ-EY-3f8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CAu-4B-V65"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="185-zJ-ZvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2779.7101449275365" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="candle" width="225" height="225"/>
+        <image name="woodTexture" width="2000" height="1500"/>
+    </resources>
 </document>
