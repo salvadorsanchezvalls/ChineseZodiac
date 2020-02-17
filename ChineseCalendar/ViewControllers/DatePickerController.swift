@@ -13,6 +13,8 @@ class DatePickerController: UIViewController {
     @IBOutlet weak var pckBirthDate: UIDatePicker!
     @IBOutlet weak var findOutButton: UIButton!
     
+    var zodiac: Zodiac!
+    
     @IBAction func dateChanged(_ sender: Any) {
         findOutButton.isEnabled = true
     }
@@ -25,7 +27,11 @@ class DatePickerController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? ResultsViewController else { return }
         
-        destination.birthDate = pckBirthDate.date
+        //pckBirthDate.date
+        
+        zodiac = Zodiac(animal: .rat, element: .wood)
+        
+        destination.zodiac = zodiac
     }
 
 

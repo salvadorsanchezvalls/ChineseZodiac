@@ -13,13 +13,12 @@ struct Zodiac {
    
     var animal: Animals
     var element: Elements
-    var affinity: [UIImage]?
     
     var aspect: String {
         switch animal {
         case .monkey:
             return "Monkey: Early Fall. Minor Yang."
-        case .roost :
+        case .rooster :
             return "Roost: Mid-Fall. Mayor Yin."
         case .dog:
             return "Dog: Late Fall. Minor Yang."
@@ -59,14 +58,26 @@ struct Zodiac {
         }
     }
     
-    init(animal: Animals, element: Elements){
-        self.animal = animal
-        self.element = element
+    var elementBackground: UIImage {
+        switch element {
+        case .metal:
+            return UIImage(named: "metalElement")!
+        case .water:
+            return UIImage(named: "waterElement")!
+        case .earth:
+            return UIImage(named: "earthElement")!
+        case .wood:
+            return UIImage(named: "woodElement")!
+        case .fire:
+            return UIImage(named: "fireElement")!
+        }
     }
+    
+    
     
     enum Animals {
         case monkey
-        case roost
+        case rooster
         case dog
         case pig
         case rat

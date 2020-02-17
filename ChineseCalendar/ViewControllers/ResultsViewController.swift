@@ -10,7 +10,9 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
-    var birthDate: Date!
+    var zodiac: Zodiac!
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     @IBAction func typeChanged(_ sender: UISegmentedControl) {
         print(sender.selectedSegmentIndex)
@@ -18,6 +20,9 @@ class ResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundImage.image = zodiac.elementBackground
+        
     }
 
 
