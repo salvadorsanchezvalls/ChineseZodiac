@@ -14,6 +14,7 @@ struct Zodiac {
     var animal: Animals
     var element: Elements
     
+    // MARK: - Text Variables
     var aspect: String {
         switch animal {
         case .monkey:
@@ -58,6 +59,7 @@ struct Zodiac {
         }
     }
     
+    // MARK: - Image Variables
     var elementBackground: UIImage {
         switch element {
         case .metal:
@@ -73,8 +75,7 @@ struct Zodiac {
         }
     }
     
-    
-    
+    // MARK: - Enums
     enum Animals {
         case monkey
         case rooster

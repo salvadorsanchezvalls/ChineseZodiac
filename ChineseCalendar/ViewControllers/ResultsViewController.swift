@@ -10,14 +10,20 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     
-    var zodiac: Zodiac!
     
+    // MARK: - Outlets
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    
+    // MARK: - Data Variables
+    var zodiac: Zodiac!
+    
+    // MARK: - Actions
     @IBAction func typeChanged(_ sender: UISegmentedControl) {
         print(sender.selectedSegmentIndex)
     }
     
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
