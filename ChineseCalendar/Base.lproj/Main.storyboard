@@ -189,10 +189,14 @@
                                 <rect key="frame" x="0.0" y="133" width="414" height="32"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <segments>
-                                    <segment title="Caracteristicas"/>
-                                    <segment title="Afinidad"/>
-                                    <segment title="Aspectos"/>
+                                    <segment title="Characteristics"/>
+                                    <segment title="Affinity"/>
+                                    <segment title="Aspect"/>
+                                    <segment title="Element"/>
                                 </segments>
+                                <connections>
+                                    <action selector="typeChanged:" destination="CsP-jK-gHs" eventType="valueChanged" id="TbG-dF-K06"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

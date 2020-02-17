@@ -12,10 +12,12 @@ class ResultsViewController: UIViewController {
     
     var birthDate: Date!
     
+    @IBAction func typeChanged(_ sender: UISegmentedControl) {
+        print(sender.selectedSegmentIndex)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(birthDate!)
     }
 
 
