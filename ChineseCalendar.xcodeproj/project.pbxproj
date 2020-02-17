@@ -60,13 +60,12 @@
 		81B5B11F23F6D05200E33DA5 /* ChineseCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				81BD41CC23FAB5C800316EC6 /* Storyboards */,
 				81B6DDAD23FA86B00064F792 /* Model */,
 				81B6DDAC23FA86970064F792 /* ViewControllers */,
 				81B5B12023F6D05200E33DA5 /* AppDelegate.swift */,
 				81B5B12223F6D05200E33DA5 /* SceneDelegate.swift */,
-				81B5B12623F6D05200E33DA5 /* Main.storyboard */,
 				81B5B12923F6D05300E33DA5 /* Assets.xcassets */,
-				81B5B12B23F6D05300E33DA5 /* LaunchScreen.storyboard */,
 				81B5B12E23F6D05300E33DA5 /* Info.plist */,
 			);
 			path = ChineseCalendar;
@@ -87,6 +86,15 @@
 				8164074723F8713B009950C1 /* Zodiac.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		81BD41CC23FAB5C800316EC6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				81B5B12623F6D05200E33DA5 /* Main.storyboard */,
+				81B5B12B23F6D05300E33DA5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
