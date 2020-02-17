@@ -25,9 +25,7 @@ class DatePickerController: UIViewController {
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    
     
     // MARK: - Navigation Functions
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,7 +38,15 @@ class DatePickerController: UIViewController {
         destination.zodiac = zodiac
     }
     
-    
+    // MARK: - Othar Functions
+    func chooseZodiacByDate() {
+        switch pckBirthDate.date{
+            //case 
+            
+        default:
+            break
+        }
+    }
 
 
 }

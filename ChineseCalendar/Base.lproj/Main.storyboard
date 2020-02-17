@@ -117,22 +117,36 @@
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="shadowOffset" width="3" height="3"/>
                                     </label>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="haC-GP-Tss">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tma-px-ANc">
                                         <rect key="frame" x="0.0" y="185.5" width="382" height="146"/>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haC-GP-Tss">
+                                                <rect key="frame" x="8" y="8" width="366" height="130"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="-347113898.51594603">
+                                                    <!--1990-01-01 11:28:21 +0000-->
+                                                </date>
+                                                <date key="minimumDate" timeIntervalSinceReferenceDate="-347112000">
+                                                    <!--1990-01-01 12:00:00 +0000-->
+                                                </date>
+                                                <date key="maximumDate" timeIntervalSinceReferenceDate="-46800">
+                                                    <!--2000-12-31 11:00:00 +0000-->
+                                                </date>
+                                                <connections>
+                                                    <action selector="dateChanged:" destination="cRM-nV-3q0" eventType="valueChanged" id="EoV-kg-0kp"/>
+                                                    <action selector="dateChanged:" destination="K8i-wk-TTD" eventType="valueChanged" id="YsN-uR-Zic"/>
+                                                </connections>
+                                            </datePicker>
+                                        </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <date key="minimumDate" timeIntervalSinceReferenceDate="-347112000">
-                                            <!--1990-01-01 12:00:00 +0000-->
-                                        </date>
-                                        <date key="maximumDate" timeIntervalSinceReferenceDate="-46800">
-                                            <!--2000-12-31 11:00:00 +0000-->
-                                        </date>
-                                        <connections>
-                                            <action selector="dateChanged:" destination="cRM-nV-3q0" eventType="valueChanged" id="EoV-kg-0kp"/>
-                                            <action selector="dateChanged:" destination="K8i-wk-TTD" eventType="valueChanged" id="YsN-uR-Zic"/>
-                                        </connections>
-                                    </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98r-S8-Xse">
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="haC-GP-Tss" secondAttribute="trailing" id="Lm1-i6-pdX"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="haC-GP-Tss" secondAttribute="bottom" id="Wbj-Ae-vzm"/>
+                                            <constraint firstItem="haC-GP-Tss" firstAttribute="top" secondItem="tma-px-ANc" secondAttribute="topMargin" id="fLS-fr-9eV"/>
+                                            <constraint firstItem="haC-GP-Tss" firstAttribute="leading" secondItem="tma-px-ANc" secondAttribute="leadingMargin" id="sxy-vx-aLW"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98r-S8-Xse">
                                         <rect key="frame" x="0.0" y="371.5" width="382" height="145.5"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
