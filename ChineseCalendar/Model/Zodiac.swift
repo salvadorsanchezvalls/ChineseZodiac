@@ -1,5 +1,5 @@
 //
-//  Struct.swift
+//  Zodiac.swift
 //  ChineseCalendar
 //
 //  Created by user164572 on 15/02/2020.
@@ -138,7 +138,8 @@ struct Zodiac {
     var affinities: (animalLeft: (image: UIImage, text: String), animalRight: (image: UIImage, text: String)) {
         switch animal {
         case .monkey:
-            return ((UIImage(named: "Rat")!, "Rat"), (UIImage(named: "Dragon")!, "Dragon"))
+            return ((UIImage(named: "Rat")!, "Rat"),
+                    (UIImage(named: "Dragon")!, "Dragon"))
         case .rooster :
             return ((UIImage(named: "Snake")!, "Snake"),
                     (UIImage(named: "Ox")!, "Ox"))

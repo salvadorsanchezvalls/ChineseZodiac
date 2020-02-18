@@ -17,11 +17,6 @@ class DatePickerController: UIViewController {
     // MARK: - Data Variables
     var zodiac: Zodiac!
     
-    // MARK: - Actions
-    @IBAction func dateChanged(_ sender: Any) {
-        findOutButton.isEnabled = true
-    }
-    
     // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
