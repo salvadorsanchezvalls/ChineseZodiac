@@ -105,7 +105,6 @@ struct Zodiac {
         }
     }
     
-    
     var animalIcon: UIImage {
         switch animal {
         case .monkey:
@@ -132,6 +131,47 @@ struct Zodiac {
             return UIImage(named: "Horse")!
         case .goat:
             return UIImage(named: "Goat")!
+        }
+    }
+    
+    
+    var affinities: (animalLeft: (image: UIImage, text: String), animalRight: (image: UIImage, text: String)) {
+        switch animal {
+        case .monkey:
+            return ((UIImage(named: "Rat")!, "Rat"), (UIImage(named: "Dragon")!, "Dragon"))
+        case .rooster :
+            return ((UIImage(named: "Snake")!, "Snake"),
+                    (UIImage(named: "Ox")!, "Ox"))
+        case .dog:
+            return ((UIImage(named: "Tiger")!, "Tiger"),
+                    (UIImage(named: "Horse")!, "Horse"))
+        case .pig:
+            return ((UIImage(named: "Hare")!, "Hare"),
+                    (UIImage(named: "Goat")!, "Goat"))
+        case .rat:
+            return ((UIImage(named: "Dragon")!, "Dragon"),
+                    (UIImage(named: "Monkey")!, "Monkey"))
+        case .ox:
+            return ((UIImage(named: "Snake")!, "Snake"),
+                    (UIImage(named: "Rooster")!, "Rooster"))
+        case .tiger:
+            return ((UIImage(named: "Hare")!, "Hare"),
+                    (UIImage(named: "Goat")!, "Goat"))
+        case .hare:
+            return ((UIImage(named: "Pig")!, "Pig"),
+                    (UIImage(named: "Goat")!, "Goat"))
+        case .dragon:
+            return ((UIImage(named: "Rat")!, "Rat"),
+                    (UIImage(named: "Monkey")!, "Monkey"))
+        case .snake:
+            return ((UIImage(named: "Rooster")!, "Rooster"),
+                    (UIImage(named: "Ox")!, "Ox"))
+        case .horse:
+            return ((UIImage(named: "Tiger")!, "Tiger"),
+                    (UIImage(named: "Dog")!, "Dog"))
+        case .goat:
+            return ((UIImage(named: "Dragon")!, "Dragon"),
+                    (UIImage(named: "Monkey")!, "Monkey"))
         }
     }
     

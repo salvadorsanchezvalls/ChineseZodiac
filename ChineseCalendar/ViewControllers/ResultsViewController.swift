@@ -9,8 +9,6 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-    
-    
     // MARK: - Outlets
     @IBOutlet weak var backgroundImage: UIImageView!
     
@@ -21,6 +19,12 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var stackCharacteristics: UIStackView!
     @IBOutlet weak var lblCharacteristics: UILabel!
+    
+    @IBOutlet weak var stackAffinity: UIStackView!
+    @IBOutlet weak var imgAffinityLeft: UIImageView!
+    @IBOutlet weak var imgAffinityRight: UIImageView!
+    @IBOutlet weak var lblAffinityLeft: UILabel!
+    @IBOutlet weak var lblAffinityRight: UILabel!
     
     @IBOutlet weak var stackAspect: UIStackView!
     @IBOutlet weak var lblAspect: UILabel!
@@ -42,6 +46,12 @@ class ResultsViewController: UIViewController {
             stackCharacteristics.isHidden = false
         }
         
+        if index != 1 {
+            stackAffinity.isHidden = true
+        } else {
+            stackAffinity.isHidden = false
+        }
+        
         if index != 2 {
             stackAspect.isHidden = true
         } else {
@@ -59,16 +69,28 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateUI()
+    }
+    
+    // MARK: - Generic Functions
+    func updateUI(){
         backgroundImage.image = zodiac.elementBackground
         lblAnimal.text = zodiac.element.rawValue + " " + zodiac.animal.rawValue
         imgAnimalIcon.image = zodiac.animalIcon
+        
         lblCharacteristics.text = zodiac.characteristics
+        
         lblElement.text = zodiac.elementText
+        
         imgAspect.image = zodiac.aspect.image
         lblAspect.text = zodiac.aspect.text
         
-        typeChanged(segControlZodiac)
+        imgAffinityLeft.image = zodiac.affinities.animalLeft.image
+        imgAffinityRight.image = zodiac.affinities.animalRight.image
+        lblAffinityLeft.text = zodiac.affinities.animalLeft.text
+        lblAffinityRight.text = zodiac.affinities.animalRight.text
         
+        typeChanged(segControlZodiac)
     }
 
 
