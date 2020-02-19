@@ -38,7 +38,38 @@ class ResultsViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func typeChanged(_ sender: UISegmentedControl) {
-        let index = sender.selectedSegmentIndex
+        updateUI()
+    }
+    
+    // MARK: - Lifecycle Functions
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        fillData()
+        updateUI()
+    }
+    
+    // MARK: - Generic Functions
+    func fillData(){
+        backgroundImage.image = zodiac.elementBackground
+        lblAnimal.text = zodiac.element.rawValue + " " + zodiac.animal.rawValue
+        imgAnimalIcon.image = zodiac.animalIcon
+        
+        lblCharacteristics.text = zodiac.characteristics
+        
+        lblElement.text = zodiac.elementText
+        
+        imgAspect.image = zodiac.aspect.image
+        lblAspect.text = zodiac.aspect.text
+        
+        imgAffinityLeft.image = zodiac.affinities.animalLeft.image
+        imgAffinityRight.image = zodiac.affinities.animalRight.image
+        lblAffinityLeft.text = zodiac.affinities.animalLeft.text
+        lblAffinityRight.text = zodiac.affinities.animalRight.text
+    }
+    
+    func updateUI(){
+        let index = segControlZodiac.selectedSegmentIndex
         
         if index != 0 {
             stackCharacteristics.isHidden = true
@@ -63,34 +94,6 @@ class ResultsViewController: UIViewController {
         } else {
             stackElement.isHidden = false
         }
-    }
-    
-    // MARK: - Lifecycle Functions
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        updateUI()
-    }
-    
-    // MARK: - Generic Functions
-    func updateUI(){
-        backgroundImage.image = zodiac.elementBackground
-        lblAnimal.text = zodiac.element.rawValue + " " + zodiac.animal.rawValue
-        imgAnimalIcon.image = zodiac.animalIcon
-        
-        lblCharacteristics.text = zodiac.characteristics
-        
-        lblElement.text = zodiac.elementText
-        
-        imgAspect.image = zodiac.aspect.image
-        lblAspect.text = zodiac.aspect.text
-        
-        imgAffinityLeft.image = zodiac.affinities.animalLeft.image
-        imgAffinityRight.image = zodiac.affinities.animalRight.image
-        lblAffinityLeft.text = zodiac.affinities.animalLeft.text
-        lblAffinityRight.text = zodiac.affinities.animalRight.text
-        
-        typeChanged(segControlZodiac)
     }
 
 

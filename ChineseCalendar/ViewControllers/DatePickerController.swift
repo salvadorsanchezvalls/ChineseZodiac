@@ -31,12 +31,13 @@ class DatePickerController: UIViewController {
         destination.zodiac = zodiac
     }
     
-    // MARK: - Othar Functions
+    // MARK: - Other Functions
     func chooseZodiacByDate() {
-        
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
         let chosenDate = pckBirthDate.date
+        
+        print(chosenDate)
         
         if formatter.date(from: "06/02/1989")! <= chosenDate
             && formatter.date(from: "26/01/1990")! >= chosenDate{
