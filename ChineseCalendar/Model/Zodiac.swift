@@ -135,7 +135,8 @@ struct Zodiac {
     }
     
     
-    var affinities: (animalLeft: (image: UIImage, text: String), animalRight: (image: UIImage, text: String)) {
+    var affinities: (animalLeft: (image: UIImage, text: String),
+                    animalRight: (image: UIImage, text: String)) {
         switch animal {
         case .monkey:
             return ((UIImage(named: "Rat")!, "Rat"),
