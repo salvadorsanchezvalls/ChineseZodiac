@@ -10,28 +10,34 @@ import UIKit
 
 class ResultsViewController: UIViewController {
     // MARK: - Outlets
-    @IBOutlet weak var backgroundImage: UIImageView!
     
-    @IBOutlet weak var segControlZodiac: UISegmentedControl!
+    //base outlets
+    @IBOutlet weak var backgroundImage      : UIImageView!
     
-    @IBOutlet weak var lblAnimal: UILabel!
-    @IBOutlet weak var imgAnimalIcon: UIImageView!
+    @IBOutlet weak var segControlZodiac     : UISegmentedControl!
     
-    @IBOutlet weak var stackCharacteristics: UIStackView!
-    @IBOutlet weak var lblCharacteristics: UILabel!
+    @IBOutlet weak var lblAnimal            : UILabel!
+    @IBOutlet weak var imgAnimalIcon        : UIImageView!
     
-    @IBOutlet weak var stackAffinity: UIStackView!
-    @IBOutlet weak var imgAffinityLeft: UIImageView!
-    @IBOutlet weak var imgAffinityRight: UIImageView!
-    @IBOutlet weak var lblAffinityLeft: UILabel!
-    @IBOutlet weak var lblAffinityRight: UILabel!
+    //characteristics outlets
+    @IBOutlet weak var stackCharacteristics : UIStackView!
+    @IBOutlet weak var lblCharacteristics   : UILabel!
     
-    @IBOutlet weak var stackAspect: UIStackView!
-    @IBOutlet weak var lblAspect: UILabel!
-    @IBOutlet weak var imgAspect: UIImageView!
+    //affinity outlets
+    @IBOutlet weak var stackAffinity        : UIStackView!
+    @IBOutlet weak var imgAffinityLeft      : UIImageView!
+    @IBOutlet weak var imgAffinityRight     : UIImageView!
+    @IBOutlet weak var lblAffinityLeft      : UILabel!
+    @IBOutlet weak var lblAffinityRight     : UILabel!
     
-    @IBOutlet weak var stackElement: UIStackView!
-    @IBOutlet weak var lblElement: UILabel!
+    //aspect outlets
+    @IBOutlet weak var stackAspect          : UIStackView!
+    @IBOutlet weak var lblAspect            : UILabel!
+    @IBOutlet weak var imgAspect            : UIImageView!
+    
+    //element outlets
+    @IBOutlet weak var stackElement         : UIStackView!
+    @IBOutlet weak var lblElement           : UILabel!
     
     // MARK: - Data Variables
     var zodiac: Zodiac!
@@ -51,21 +57,21 @@ class ResultsViewController: UIViewController {
     
     // MARK: - Generic Functions
     func fillData(){
-        backgroundImage.image = zodiac.elementBackground
-        lblAnimal.text = zodiac.element.rawValue + " " + zodiac.animal.rawValue
-        imgAnimalIcon.image = zodiac.animalIcon
+        backgroundImage.image   = zodiac.elementBackground
+        lblAnimal.text          = zodiac.element.rawValue + " " + zodiac.animal.rawValue
+        imgAnimalIcon.image     = zodiac.animalIcon
         
         lblCharacteristics.text = zodiac.characteristics
         
-        lblElement.text = zodiac.elementText
+        lblElement.text         = zodiac.elementText
         
-        imgAspect.image = zodiac.aspect.image
-        lblAspect.text = zodiac.aspect.text
+        imgAspect.image         = zodiac.aspect.image
+        lblAspect.text          = zodiac.aspect.text
         
-        imgAffinityLeft.image = zodiac.affinities.animalLeft.image
-        imgAffinityRight.image = zodiac.affinities.animalRight.image
-        lblAffinityLeft.text = zodiac.affinities.animalLeft.text
-        lblAffinityRight.text = zodiac.affinities.animalRight.text
+        imgAffinityLeft.image   = zodiac.affinities.animalLeft.image
+        imgAffinityRight.image  = zodiac.affinities.animalRight.image
+        lblAffinityLeft.text    = zodiac.affinities.animalLeft.text
+        lblAffinityRight.text   = zodiac.affinities.animalRight.text
     }
     
     func updateUI(){
