@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81341D3A23FE98230065194B /* BeginningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81341D3923FE98230065194B /* BeginningViewController.swift */; };
 		8164074623F861DB009950C1 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8164074523F861DB009950C1 /* ResultsViewController.swift */; };
 		8164074823F8713B009950C1 /* Zodiac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8164074723F8713B009950C1 /* Zodiac.swift */; };
 		81B5B12123F6D05200E33DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B5B12023F6D05200E33DA5 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81341D3923FE98230065194B /* BeginningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningViewController.swift; sourceTree = "<group>"; };
 		8164074523F861DB009950C1 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		8164074723F8713B009950C1 /* Zodiac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zodiac.swift; sourceTree = "<group>"; };
 		81B5B11D23F6D05200E33DA5 /* ChineseCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 			children = (
 				81B5B12423F6D05200E33DA5 /* DatePickerController.swift */,
 				8164074523F861DB009950C1 /* ResultsViewController.swift */,
+				81341D3923FE98230065194B /* BeginningViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				81B5B12123F6D05200E33DA5 /* AppDelegate.swift in Sources */,
 				81B5B12323F6D05200E33DA5 /* SceneDelegate.swift in Sources */,
 				8164074823F8713B009950C1 /* Zodiac.swift in Sources */,
+				81341D3A23FE98230065194B /* BeginningViewController.swift in Sources */,
 				8164074623F861DB009950C1 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

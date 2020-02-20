@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="61e-ew-thA">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Beginning View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BeginningViewController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chinese carpet new" translatesAutoresizingMaskIntoConstraints="NO" id="ksc-zr-k3l">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candle" translatesAutoresizingMaskIntoConstraints="NO" id="q6A-va-k2K">
-                                <rect key="frame" x="16" y="737" width="125" height="125"/>
+                                <rect key="frame" x="16" y="542" width="86" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="xOs-DX-vLn"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-pb-yDl">
-                                <rect key="frame" x="16" y="321.5" width="382" height="253"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="JF5-pb-yDl">
+                                <rect key="frame" x="16" y="228.5" width="343" height="210.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your chinese horoscope?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-Ud-IUP">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="126.5"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your chinese horoscope?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCO-Ud-IUP">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="111.5"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="shadowOffset" width="3" height="3"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4St-gC-QW8">
-                                        <rect key="frame" x="0.0" y="126.5" width="382" height="126.5"/>
+                                        <rect key="frame" x="0.0" y="111.5" width="343" height="99"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="80"/>
                                         <size key="titleShadowOffset" width="3" height="3"/>
@@ -50,6 +50,48 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Rbc-zH-4dh">
+                                <rect key="frame" x="16" y="60" width="343" height="88.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your last Zodiac was:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWe-tt-hLv">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="3" height="3"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="m6A-kb-BId">
+                                        <rect key="frame" x="0.0" y="43.5" width="343" height="45"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZODIAC TYPE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-0L-FaO">
+                                                <rect key="frame" x="0.0" y="0.0" width="274.5" height="45"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="3" height="3"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXn-Tg-RfY">
+                                                <rect key="frame" x="274.5" y="0.0" width="68.5" height="45"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                <size key="titleShadowOffset" width="3" height="3"/>
+                                                <state key="normal" title="&gt;">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="accessingLastZodiac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUU-pR-58x"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gLk-0L-FaO" firstAttribute="width" secondItem="qXn-Tg-RfY" secondAttribute="width" multiplier="4" id="ZtO-bs-Ups"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -57,17 +99,27 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ksc-zr-k3l" secondAttribute="trailing" id="FC9-Fw-2vU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="q6A-va-k2K" secondAttribute="trailing" constant="273" id="GDe-8h-DU2"/>
                             <constraint firstAttribute="trailing" secondItem="JF5-pb-yDl" secondAttribute="trailing" constant="16" id="Jj8-3N-UlA"/>
+                            <constraint firstItem="Rbc-zH-4dh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="KQz-Z2-Kzp"/>
                             <constraint firstItem="JF5-pb-yDl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ObU-j2-3tI"/>
                             <constraint firstItem="ksc-zr-k3l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="U2J-di-3ua"/>
                             <constraint firstItem="q6A-va-k2K" firstAttribute="bottom" secondItem="ksc-zr-k3l" secondAttribute="bottom" id="UiF-bc-6dz"/>
                             <constraint firstItem="ksc-zr-k3l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yzr-w2-Tev"/>
                             <constraint firstItem="q6A-va-k2K" firstAttribute="leading" secondItem="JF5-pb-yDl" secondAttribute="leading" id="fDr-yb-iWH"/>
+                            <constraint firstItem="JF5-pb-yDl" firstAttribute="top" secondItem="Rbc-zH-4dh" secondAttribute="bottom" constant="80" id="fJ3-jJ-RHn"/>
+                            <constraint firstItem="Rbc-zH-4dh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-16" id="kLo-Vh-ZD4"/>
                             <constraint firstItem="ksc-zr-k3l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="o6Y-YX-clB"/>
                             <constraint firstItem="JF5-pb-yDl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tFF-ZH-Xua"/>
+                            <constraint firstItem="Rbc-zH-4dh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xrW-d1-dHt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="GM9-df-Om7"/>
+                    <connections>
+                        <outlet property="btnLastZodiac" destination="qXn-Tg-RfY" id="jx7-jC-atm"/>
+                        <outlet property="lblLastZodiac" destination="gLk-0L-FaO" id="5kK-Ir-DZY"/>
+                        <outlet property="stackLastZodiac" destination="Rbc-zH-4dh" id="Xky-lb-lWb"/>
+                        <segue destination="CsP-jK-gHs" kind="show" identifier="lastZodiacSegue" id="oGM-yg-sk8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,7 +131,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="61e-ew-thA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="faw-jY-Ifg">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -96,23 +148,23 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="K8i-wk-TTD" customClass="DatePickerController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LKn-Yx-Ym2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chinese carpet new" translatesAutoresizingMaskIntoConstraints="NO" id="Upn-YK-MPf">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candle" translatesAutoresizingMaskIntoConstraints="NO" id="tj4-l0-CgD">
-                                <rect key="frame" x="16" y="737" width="125" height="125"/>
+                                <rect key="frame" x="16" y="542" width="86" height="125"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="f64-8l-PQ2"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="Wjs-Bv-AAP">
-                                <rect key="frame" x="16" y="104" width="382" height="617"/>
+                                <rect key="frame" x="16" y="60" width="343" height="466"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your birthdate!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpz-Wa-2WN">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="179"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="128.5"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -120,10 +172,10 @@
                                         <size key="shadowOffset" width="3" height="3"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tma-px-ANc">
-                                        <rect key="frame" x="0.0" y="219" width="382" height="179"/>
+                                        <rect key="frame" x="0.0" y="168.5" width="343" height="129"/>
                                         <subviews>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haC-GP-Tss">
-                                                <rect key="frame" x="8" y="8" width="366" height="163"/>
+                                                <rect key="frame" x="8" y="8" width="327" height="113"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <date key="date" timeIntervalSinceReferenceDate="-347113898.51594603">
                                                     <!--1990-01-01 11:28:21 +0000-->
@@ -148,7 +200,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98r-S8-Xse">
-                                        <rect key="frame" x="0.0" y="438" width="382" height="179"/>
+                                        <rect key="frame" x="0.0" y="337.5" width="343" height="128.5"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="70"/>
                                         <size key="titleShadowOffset" width="3" height="3"/>
@@ -177,6 +229,9 @@
                             <constraint firstItem="Upn-YK-MPf" firstAttribute="bottom" secondItem="0Wg-ZX-64Z" secondAttribute="bottom" id="X2Z-zP-WA4"/>
                             <constraint firstItem="tj4-l0-CgD" firstAttribute="top" secondItem="Wjs-Bv-AAP" secondAttribute="bottom" constant="16" id="Xkh-gr-XHs"/>
                             <constraint firstAttribute="trailing" secondItem="Wjs-Bv-AAP" secondAttribute="trailing" constant="16" id="akk-Md-YZH"/>
+                            <constraint firstItem="Wjs-Bv-AAP" firstAttribute="bottom" secondItem="0Wg-ZX-64Z" secondAttribute="bottom" constant="308" id="atS-se-Qne">
+                                <variation key="heightClass=compact-widthClass=compact" constant="-32"/>
+                            </constraint>
                             <constraint firstItem="Upn-YK-MPf" firstAttribute="top" secondItem="0Wg-ZX-64Z" secondAttribute="top" id="byR-Q5-ut5"/>
                             <constraint firstItem="0Wg-ZX-64Z" firstAttribute="trailing" secondItem="tj4-l0-CgD" secondAttribute="trailing" constant="273" id="lwU-kc-SO2"/>
                             <constraint firstItem="Wjs-Bv-AAP" firstAttribute="top" secondItem="0Wg-ZX-64Z" secondAttribute="top" constant="16" id="y0J-CX-QtW"/>
@@ -185,6 +240,13 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="SoN-xE-7Br"/>
+                                <exclude reference="atS-se-Qne"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="atS-se-Qne"/>
+                                <exclude reference="Xkh-gr-XHs"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -210,14 +272,14 @@
             <objects>
                 <viewController id="CsP-jK-gHs" customClass="ResultsViewController" customModule="ChineseCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ofC-dT-kiR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chinese carpet new" translatesAutoresizingMaskIntoConstraints="NO" id="r8a-Ag-qbS">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="V8Z-r7-ljF">
-                                <rect key="frame" x="0.0" y="815" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="620" width="375" height="32"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <segments>
                                     <segment title="Characteristics"/>
@@ -230,10 +292,10 @@
                                 </connections>
                             </segmentedControl>
                             <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Phn-eP-G6A" userLabel="ResultStackView">
-                                <rect key="frame" x="16" y="104" width="382" height="710"/>
+                                <rect key="frame" x="16" y="60" width="343" height="559"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RD1-22-Fhb">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="61.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48.5"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -241,7 +303,7 @@
                                         <size key="shadowOffset" width="3" height="3"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANIMAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdQ-Z7-uUA">
-                                        <rect key="frame" x="0.0" y="61.5" width="382" height="123.5"/>
+                                        <rect key="frame" x="0.0" y="48.5" width="343" height="97.5"/>
                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="40"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -249,16 +311,16 @@
                                         <size key="shadowOffset" width="3" height="3"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hare" translatesAutoresizingMaskIntoConstraints="NO" id="zvv-UU-UWs">
-                                        <rect key="frame" x="0.0" y="185" width="382" height="210"/>
+                                        <rect key="frame" x="0.0" y="146" width="343" height="165"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwu-ov-bTG">
-                                        <rect key="frame" x="0.0" y="395" width="382" height="315"/>
+                                        <rect key="frame" x="0.0" y="311" width="343" height="248"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SYf-Gb-Z71">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="315"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="248"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DescriptionText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nw-cE-8au">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="315"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="248"/>
                                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -268,10 +330,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Jvc-1O-B8v">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="315"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="248"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Element Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX2-4L-TDT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="315"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="248"/>
                                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -281,13 +343,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VbX-3V-iAS">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="315"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="248"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yang" translatesAutoresizingMaskIntoConstraints="NO" id="nIH-0w-a25">
-                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="315"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="248"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aspect Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zff-fg-qCf">
-                                                        <rect key="frame" x="191" y="0.0" width="191" height="315"/>
+                                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="248"/>
                                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -297,10 +359,10 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kO0-XE-gUz">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="315"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="248"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have great affinity with..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycw-NA-E87">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="105"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="82.5"/>
                                                         <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="27"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -308,21 +370,21 @@
                                                         <size key="shadowOffset" width="3" height="3"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xTU-5A-HgM">
-                                                        <rect key="frame" x="0.0" y="105" width="382" height="105"/>
+                                                        <rect key="frame" x="0.0" y="82.5" width="343" height="83"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Goat" translatesAutoresizingMaskIntoConstraints="NO" id="jNB-jl-Ehg">
-                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="105"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="83"/>
                                                             </imageView>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ox" translatesAutoresizingMaskIntoConstraints="NO" id="psO-b6-hPY">
-                                                                <rect key="frame" x="191" y="0.0" width="191" height="105"/>
+                                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="83"/>
                                                             </imageView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Orf-YE-pKf">
-                                                        <rect key="frame" x="0.0" y="210" width="382" height="105"/>
+                                                        <rect key="frame" x="0.0" y="165.5" width="343" height="82.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANIMAL 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfh-LJ-wf7">
-                                                                <rect key="frame" x="0.0" y="0.0" width="191" height="105"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="82.5"/>
                                                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -330,7 +392,7 @@
                                                                 <size key="shadowOffset" width="3" height="3"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANIMAL 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi9-4l-cY3">
-                                                                <rect key="frame" x="191" y="0.0" width="191" height="105"/>
+                                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="82.5"/>
                                                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -418,4 +480,7 @@
         <image name="chinese carpet new" width="639" height="909"/>
         <image name="yang" width="710" height="867"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oGM-yg-sk8"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -53,6 +53,8 @@ class ResultsViewController: UIViewController {
         
         fillData()
         updateUI()
+        
+        Zodiac.saveToFile(zodiac: [zodiac])
     }
     
     // MARK: - Generic Functions

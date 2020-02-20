@@ -9,10 +9,15 @@
 import UIKit
 import Foundation
 
-struct Zodiac {
+struct Zodiac: Codable {
    
     var animal: Animals
     var element: Elements
+    
+    static let archiveURL =
+    FileManager.default.urls(for: .documentDirectory,
+    in: .userDomainMask).first!.appendingPathComponent("Documents")
+       .appendingPathExtension("plist")
     
     // MARK: - Text Variables
     
@@ -177,9 +182,28 @@ struct Zodiac {
         }
     }
     
+    //MARK: - Data Management Functions
+    static func saveToFile(zodiac: [Zodiac]) {
+        let propertyListEncoder = PropertyListEncoder()
+        let encodedZodiac = try? propertyListEncoder.encode(zodiac)
+        
+        try? encodedZodiac?.write(to: Zodiac.archiveURL, options: .noFileProtection)
+    }
+    
+    static func loadFromFile() -> Zodiac? {
+        let propertyListDecoder = PropertyListDecoder()
+        
+        if let retrievedZodiac = try? Data(contentsOf: Zodiac.archiveURL),
+            let decodedZodiac = try? propertyListDecoder.decode(Array<Zodiac>.self, from: retrievedZodiac){
+            
+            return decodedZodiac.first
+        }
+        return nil
+    }
+    
     
     // MARK: - Enums
-    enum Animals : String {
+    enum Animals : String, Codable {
         case monkey     = "Monkey"
         case rooster    = "Rooster"
         case dog        = "Dog"
@@ -194,7 +218,7 @@ struct Zodiac {
         case goat       = "Goat"
     }
     
-    enum Elements : String{
+    enum Elements : String, Codable {
         case metal  = "Metal"
         case water  = "Water"
         case earth  = "Earth"
